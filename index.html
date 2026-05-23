@@ -2,6 +2,22 @@
 <html lang="en">  
 <head>  
 <link rel="icon" type="image/png" href="https://i.postimg.cc/B6wvwGrY/New-Project-9-E37BE2C.png">
+
+<!-- ✅ Open Graph Tags — الصورة اللي تظهر عند مشاركة الرابط -->
+<meta property="og:title" content="NABTAR — Indie Game Studio">
+<meta property="og:description" content="We're an 8-person team building games that feel different — fast, unexpected, and impossible to put down.">
+<meta property="og:image" content="https://i.postimg.cc/NfQg7F2v/file-000000006f5c724688852c8f17a0d460.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nabtar.studio">
+
+<!-- ✅ Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NABTAR — Indie Game Studio">
+<meta name="twitter:description" content="We're an 8-person team building games that feel different — fast, unexpected, and impossible to put down.">
+<meta name="twitter:image" content="https://i.postimg.cc/NfQg7F2v/file-000000006f5c724688852c8f17a0d460.png">
+
 <meta charset="UTF-8">  
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">  
 <title>NABTAR — Indie Game Studio</title>  
@@ -96,38 +112,12 @@ transparent
 --s1:#181818;--s2:#202020;--s3:#2a2a2a;
 --hi:#f0f0f0;--mid:#707070;--lo:#353535;
 }
-,::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+*,::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 ::-webkit-scrollbar{width:2px;}
 ::-webkit-scrollbar-track{background:var(--bg);}
 ::-webkit-scrollbar-thumb{background:var(--g);}
 body{background:var(--bg);color:var(--hi);font-family:'Syne',sans-serif;overflow-x:hidden;cursor:none;}
-
-/* ============================================ /
-/ === SCANLINES EFFECT ADDED === /
-/ ============================================ /
-body::before {
-content: "";
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-pointer-events: none;
-z-index: 9998;
-background: repeating-linear-gradient(
-0deg,
-rgba(0, 0, 0, 0.08) 0px,
-rgba(0, 0, 0, 0.08) 2px,
-transparent 2px,
-transparent 6px
-);
-box-shadow: inset 0 0 50px rgba(0,0,0,0.3);
-}
-body::after {
-z-index: 9999;
-}
-/ ============================================ */
 
 /* ─── CURSOR ─── */
 #cur{position:fixed;top:0;left:0;z-index:99999;pointer-events:none;}
@@ -298,7 +288,6 @@ section{padding:7rem 0;position:relative;}
 .f-socials a:hover{color:var(--g);}
 .f-copy{font-family:'Space Mono',monospace;font-size:.5rem;letter-spacing:2px;color:var(--lo);text-transform:uppercase;}
 @media(max-width:768px){footer{padding:2rem 1.5rem;flex-direction:column;align-items:flex-start;}}
-/ تم إضافة هذه القاعدة CSS */
 .hero-vignette {
 position: absolute;
 inset: 0;
@@ -307,10 +296,10 @@ pointer-events: none;
 background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(0,0,0,.55) 100%);
 }
 </style>
-
 </head>  
 <body>  
-<div id="cur"><div class="cur-dot"></div><div class="cur-ring"></div></div>  <nav>  
+<div id="cur"><div class="cur-dot"></div><div class="cur-ring"></div></div>
+<nav>  
   <a href="#" class="n-logo"><div class="dot"></div>NAB<span style="color:var(--g)">T</span>AR</a>  
   <ul class="n-links">  
     <li><a href="#featured">Featured</a></li>  
@@ -325,13 +314,15 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
     <a href="https://discord.gg/ZfpJCPSvS5" target="_blank"><i class="fab fa-discord"></i></a>  
   </div>  
   <div class="n-prog" id="navProg"></div>  
-</nav>  <!-- HERO -->  <section class="hero" id="home">  
-  <!-- تم إضافة هذا العنصر داخل قسم hero -->  
+</nav>
+
+<section class="hero" id="home">  
   <div class="hero-vignette"></div>  
   <canvas id="heroCanvas"></canvas>  
   <div class="hero-glow"></div>  
   <div class="hero-vignette"></div>  
-  <div class="hero-lines"></div>    <div class="hero-split">  
+  <div class="hero-lines"></div>    
+  <div class="hero-split">  
     <div class="hero-l">  
       <div class="hero-tag">Indie Game Studio &nbsp;·&nbsp; Est. 2025</div>  
       <h1 class="hero-h">  
@@ -343,8 +334,11 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
         <a href="#featured" class="btn btn-primary"><span>See Our Game</span> <i class="fas fa-arrow-right"></i></a>  
         <a href="https://discord.gg/ZfpJCPSvS5" target="_blank" class="btn btn-outline">Join Discord</a>  
       </div>  
-    </div>    </div>  
-</section>  <!-- FEATURED -->  <section id="featured">  
+    </div>
+  </div>  
+</section>
+
+<section id="featured">  
   <div class="wrap">  
     <div class="s-label rv"><span></span> 01 — Featured</div>  
     <div class="feat rv">  
@@ -366,7 +360,9 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
       </div>  
     </div>  
   </div>  
-</section>  <!-- GAMES -->  <section id="games">  
+</section>
+
+<section id="games">  
   <div class="wrap">  
     <div class="s-label rv"><span></span> 02 — Games</div>  
     <h2 class="s-title rv">All <em>Games</em></h2>  
@@ -387,7 +383,9 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
       </div>  
     </div>  
   </div>  
-</section>  <!-- TEAM -->  <section id="team">  
+</section>
+
+<section id="team">  
   <div class="wrap">  
     <div class="s-label rv"><span></span> 03 — Team</div>  
     <div class="team-head">  
@@ -396,7 +394,9 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
     </div>  
     <div class="team-grid" id="teamGrid"></div>  
   </div>  
-</section>  <!-- ETHOS -->  <section id="ethos" class="ethos">  
+</section>
+
+<section id="ethos" class="ethos">  
   <div class="ethos-bg-txt">NABTAR</div>  
   <div class="ethos-inner">  
     <div class="ethos-l">  
@@ -410,7 +410,9 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
       <div class="pillar rv"><div class="pillar-n">03</div><div class="pillar-body"><div class="pillar-ico"><i class="fas fa-users"></i></div><h3>Community First</h3><p>We build with our players, not just for them. Feedback shapes everything.</p></div></div>  
     </div>  
   </div>  
-</section>  <!-- TRAILER -->  <section id="trailer">  
+</section>
+
+<section id="trailer">  
   <div class="wrap">  
     <div class="s-label rv"><span></span> 05 — Trailer</div>  
     <h2 class="s-title rv">Official <em>Trailer</em></h2>  
@@ -421,7 +423,9 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
       <div class="t-tag"><i class="fas fa-circle blink-dot"></i> Coming Soon</div>  
     </div>  
   </div>  
-</section>  <footer>  
+</section>
+
+<footer>  
   <a href="#" class="f-logo">NAB<span class="accent">T</span>AR</a>  
   <div class="f-socials">  
     <a href="https://youtube.com/@nabtaxstudio" target="_blank"><i class="fab fa-youtube"></i></a>  
@@ -429,10 +433,10 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
     <a href="https://discord.gg/ZfpJCPSvS5" target="_blank"><i class="fab fa-discord"></i></a>  
   </div>  
   <div class="f-copy">© 2026 Nabtar Studio · Made with passion</div>  
-</footer>  <script>  
+</footer>
+
+<script>  
 (function(){  
-  
-  /* ── CURSOR ── */  
   const curDot = document.querySelector('.cur-dot');  
   const curRing = document.querySelector('.cur-ring');  
   let mx=0,my=0,rx=0,ry=0;  
@@ -446,13 +450,11 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
     requestAnimationFrame(loop);  
   })();  
   
-  /* ── NAV PROGRESS ── */  
   const prog=document.getElementById('navProg');  
   window.addEventListener('scroll',()=>{  
     prog.style.width=(window.scrollY/(document.body.scrollHeight-innerHeight)*100)+'%';  
   },{passive:true});  
   
-  /* ── CANVAS PARTICLES ── */  
   const canvas=document.getElementById('heroCanvas');  
   const ctx=canvas.getContext('2d');  
   let W,H,pts=[];  
@@ -509,7 +511,6 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
   }  
   draw();  
   
-  /* ── TEAM ── */  
   const members=[  
     {name:"Abdulrahman Bakoush",role:"CEO & Dev",img:"https://i.postimg.cc/GmykF0SY/New-Project-059188A.png"},  
     {name:"Mazen",role:"Dev & 3D Designer",img:"https://i.postimg.cc/1zBq9yjg/cb98496bcab361b8ce245f7cfa4fb926.png"},  
@@ -529,13 +530,11 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
     grid.appendChild(el);  
   });  
   
-  /* ── SCROLL REVEAL ── */  
   const obs=new IntersectionObserver(es=>{  
     es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);}});  
   },{threshold:.08});  
   document.querySelectorAll('.rv,.member').forEach(el=>obs.observe(el));  
   
-  /* ── SECTION FADE ON SCROLL ── */  
   const sections = document.querySelectorAll('section');  
   const sectionObserver = new IntersectionObserver((entries) => {  
     entries.forEach(entry => {  
@@ -547,542 +546,6 @@ background: radial-gradient(ellipse 100% 100% at 50% 50%, transparent 50%, rgba(
   sections.forEach(section => sectionObserver.observe(section));  
   
 })();  
-</script>  </body>  
-</html>--g2:#00ff88;
---bg:#0a0a0a;
---bg2:#101010;
---line:#1d1d1d;
---text:#f1f1f1;
---muted:#7a7a7a;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:var(--bg);
-color:var(--text);
-font-family:'Syne',sans-serif;
-overflow-x:hidden;
-}
-
-/* Scrollbar */
-
-::-webkit-scrollbar{
-width:5px;
-}
-
-::-webkit-scrollbar-thumb{
-background:var(--g);
-}
-
-/* NAV */
-
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:70px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 50px;
-z-index:1000;
-background:rgba(0,0,0,.75);
-backdrop-filter:blur(10px);
-border-bottom:1px solid var(--line);
-}
-
-.logo{
-font-family:'Bebas Neue',sans-serif;
-font-size:2rem;
-letter-spacing:6px;
-text-decoration:none;
-color:white;
-}
-
-.logo span{
-color:var(--g);
-}
-
-.nav-links{
-display:flex;
-gap:25px;
-}
-
-.nav-links a{
-text-decoration:none;
-font-family:'Space Mono',monospace;
-font-size:.75rem;
-color:var(--muted);
-transition:.25s;
-text-transform:uppercase;
-}
-
-.nav-links a:hover{
-color:white;
-}
-
-/* HERO */
-
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-position:relative;
-overflow:hidden;
-padding:120px 40px;
-background:
-linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.9)),
-url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop');
-background-size:cover;
-background-position:center;
-}
-
-.hero::before{
-content:'';
-position:absolute;
-inset:0;
-background:
-radial-gradient(circle at center, rgba(0,196,106,.18), transparent 60%);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-text-align:center;
-max-width:850px;
-}
-
-.hero-tag{
-font-family:'Space Mono',monospace;
-font-size:.75rem;
-letter-spacing:4px;
-text-transform:uppercase;
-color:var(--g);
-margin-bottom:20px;
-}
-
-.hero h1{
-font-family:'Bebas Neue',sans-serif;
-font-size:clamp(5rem,14vw,10rem);
-line-height:.9;
-letter-spacing:4px;
-}
-
-.hero h1 span{
-display:block;
-color:transparent;
--webkit-text-stroke:2px var(--g);
-}
-
-.hero p{
-margin-top:25px;
-font-size:1rem;
-line-height:1.9;
-color:#b5b5b5;
-max-width:600px;
-margin-inline:auto;
-}
-
-.hero-buttons{
-margin-top:40px;
-display:flex;
-justify-content:center;
-gap:18px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:14px 28px;
-text-decoration:none;
-font-family:'Space Mono',monospace;
-font-size:.7rem;
-letter-spacing:3px;
-text-transform:uppercase;
-transition:.3s;
-}
-
-.btn-primary{
-background:var(--g);
-color:black;
-font-weight:700;
-}
-
-.btn-primary:hover{
-background:var(--g2);
-transform:translateY(-3px);
-}
-
-.btn-outline{
-border:1px solid var(--line);
-color:white;
-}
-
-.btn-outline:hover{
-border-color:var(--g);
-color:var(--g);
-}
-
-/* SECTION */
-
-section{
-padding:110px 40px;
-border-top:1px solid var(--line);
-}
-
-.wrap{
-max-width:1200px;
-margin:auto;
-}
-
-.section-tag{
-font-family:'Space Mono',monospace;
-font-size:.7rem;
-letter-spacing:4px;
-color:var(--g);
-text-transform:uppercase;
-margin-bottom:20px;
-}
-
-.section-title{
-font-family:'Bebas Neue',sans-serif;
-font-size:clamp(3rem,8vw,6rem);
-line-height:.9;
-margin-bottom:50px;
-}
-
-.section-title span{
-color:transparent;
--webkit-text-stroke:1px var(--g);
-}
-
-/* FEATURED */
-
-.featured{
-display:grid;
-grid-template-columns:1fr 1fr;
-background:var(--bg2);
-border:1px solid var(--line);
-overflow:hidden;
-}
-
-.featured img{
-width:100%;
-height:100%;
-object-fit:cover;
-min-height:500px;
-opacity:.85;
-}
-
-.featured-info{
-padding:50px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-}
-
-.genre{
-font-family:'Space Mono',monospace;
-font-size:.7rem;
-letter-spacing:3px;
-color:var(--g);
-text-transform:uppercase;
-margin-bottom:20px;
-}
-
-.game-title{
-font-family:'Bebas Neue',sans-serif;
-font-size:4rem;
-line-height:.9;
-margin-bottom:20px;
-}
-
-.game-desc{
-line-height:1.9;
-color:#b0b0b0;
-margin-bottom:35px;
-}
-
-/* TEAM */
-
-.team-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:1px;
-background:var(--line);
-border:1px solid var(--line);
-}
-
-.member{
-background:var(--bg2);
-padding:30px;
-text-align:center;
-transition:.3s;
-}
-
-.member:hover{
-background:#181818;
-}
-
-.member img{
-width:90px;
-height:90px;
-border-radius:50%;
-object-fit:cover;
-margin-bottom:15px;
-border:2px solid var(--g);
-}
-
-.member h3{
-font-size:1rem;
-margin-bottom:6px;
-}
-
-.member p{
-font-size:.75rem;
-font-family:'Space Mono',monospace;
-color:var(--g);
-letter-spacing:2px;
-}
-
-/* FOOTER */
-
-footer{
-padding:40px;
-border-top:1px solid var(--line);
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-gap:20px;
-}
-
-.footer-logo{
-font-family:'Bebas Neue',sans-serif;
-font-size:2rem;
-letter-spacing:6px;
-}
-
-.footer-logo span{
-color:var(--g);
-}
-
-.footer-socials{
-display:flex;
-gap:18px;
-}
-
-.footer-socials a{
-color:#666;
-font-size:1rem;
-transition:.25s;
-}
-
-.footer-socials a:hover{
-color:var(--g);
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-.featured{
-grid-template-columns:1fr;
-}
-
-nav{
-padding:0 20px;
-}
-
-.nav-links{
-display:none;
-}
-
-.hero{
-padding-inline:20px;
-}
-
-section{
-padding-inline:20px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<!-- NAV -->
-
-<nav>
-
-<a href="#" class="logo">
-NAB<span>T</span>AR
-</a>
-
-<div class="nav-links">
-<a href="#featured">Featured</a>
-<a href="#team">Team</a>
-<a href="#contact">Contact</a>
-</div>
-
-</nav>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-content">
-
-<div class="hero-tag">
-INDIE GAME STUDIO · EST 2025
-</div>
-
-<h1>
-NABTAR
-<span>STUDIO</span>
-</h1>
-
-<p>
-We build games that feel different — fast, experimental, and impossible to put down.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#featured" class="btn btn-primary">
-See Our Game
-</a>
-
-<a href="https://discord.gg/ZfpJCPSvS5" target="_blank" class="btn btn-outline">
-Join Discord
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FEATURED -->
-
-<section id="featured">
-
-<div class="wrap">
-
-<div class="section-tag">
-01 — Featured
-</div>
-
-<h2 class="section-title">
-Main <span>Project</span>
-</h2>
-
-<div class="featured">
-
-<img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&auto=format&fit=crop&q=80">
-
-<div class="featured-info">
-
-<div class="genre">
-Arcade / Action
-</div>
-
-<div class="game-title">
-Out Of Service
-</div>
-
-<p class="game-desc">
-A massive mall. Locked exits. One chance to escape. Drag, dodge, and survive through fast-paced arcade chaos before time runs out.
-</p>
-
-<a href="https://discord.gg/ZfpJCPSvS5" target="_blank" class="btn btn-primary">
-Learn More
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- TEAM -->
-
-<section id="team">
-
-<div class="wrap">
-
-<div class="section-tag">
-02 — Team
-</div>
-
-<h2 class="section-title">
-The <span>Crew</span>
-</h2>
-
-<div class="team-grid">
-
-<div class="member">
-<img src="https://i.postimg.cc/GmykF0SY/New-Project-059188A.png">
-<h3>Abdulrahman</h3>
-<p>CEO & DEV</p>
-</div>
-
-<div class="member">
-<img src="https://i.postimg.cc/1zBq9yjg/cb98496bcab361b8ce245f7cfa4fb926.png">
-<h3>Mazen</h3>
-<p>DEV & 3D</p>
-</div>
-
-<div class="member">
-<img src="https://i.postimg.cc/0jczvwKc/IMG-20260521-WA0020.jpg">
-<h3>Xeon Brix</h3>
-<p>ARTIST</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer id="contact">
-
-<div class="footer-logo">
-NAB<span>T</span>AR
-</div>
-
-<div class="footer-socials">
-
-<a href="https://youtube.com/@nabtaxstudio" target="_blank">
-<i class="fab fa-youtube"></i>
-</a>
-
-<a href="https://discord.gg/ZfpJCPSvS5" target="_blank">
-<i class="fab fa-discord"></i>
-</a>
-
-<a href="https://nabtax-studio.itch.io/" target="_blank">
-<i class="fab fa-itch-io"></i>
-</a>
-
-</div>
-
-</footer>
-
-</body>
+</script>
+</body>  
 </html>
